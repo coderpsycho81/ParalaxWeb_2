@@ -1,0 +1,388 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto Slab', serif;
+}
+
+html, body{
+  min-height: 100vh;
+  overflow-x: hidden;
+  background: linear-gradient(#2b1055, #7597de);
+}
+
+header{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+
+.logo{
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+}
+
+header ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header ul li{
+  list-style: none;
+  margin-left: 20px;
+}
+
+header ul li a{
+  text-decoration: none;
+  padding: 6px 15px;
+  color: #fff;
+  border-radius: 20px;
+}
+
+header ul li a:hover, header ul li a.active{
+  color: #2d3436;
+  background: #f5f5f5;
+  box-shadow: #f5f5f5 2px 2px 8px,#4d4d4d -2px -2px 8px;
+}
+
+section{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  padding: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+section::before{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(to top, #1c0522, transparent);
+  z-index: 1000;
+}
+
+section img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+#moon{
+  mix-blend-mode:screen;
+}
+
+#mountains_front{
+  z-index: 10;
+}
+
+#text{
+  position: absolute;
+  right: -450px;
+  color: #fff;
+  white-space: nowrap;
+  font-size: 7.5vw;
+  z-index: 9;
+}
+
+#btn{
+  text-decoration: none;
+  padding: 8px 30px;
+  border-radius: 40px;
+  background:#dfe6e9;
+  color: #2f3542;
+  font-size: 1.5em;
+  color: #4b4b4b;
+  z-index: 9;
+  transform: translateY(95px);
+}
+
+.sec{
+  position: relative;
+  padding: 80px;
+  border-color: #fff;
+}
+
+.sec h2{
+  font-size: 3.5em;
+  margin-bottom: 10px;
+  color: #F5F5F5;
+}
+
+.sec p{
+  font-size: 1.3em;
+  color: #F5F5F5;
+  width: 70%;
+  line-height: 30px;
+  float: left;
+}
+
+hr{
+  width: 13rem;
+  height: 4px;
+  border-radius: 10px;
+  background-color: #F5F5F5;
+  border-style: none;
+  margin-bottom: 10px;
+  position: relative;
+  bottom:10px;
+}
+
+.aboutsIMG div{
+  width: 19rem;
+  height: 25rem;
+  margin: 40px;
+  float: right;
+  position: relative;
+  bottom:20rem;
+}
+
+.aboutsIMG div img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: #000000 2px 2px 8px,#4d4d4d -2px -2px 8px;
+}
+
+.clear{
+  clear: both;
+}
+
+.cards h1{
+  color: #fff;
+  text-align: center;
+  font-weight: 600;
+  font-size: 40px;
+  margin-bottom: 15px;
+  position: relative;
+  letter-spacing: 2px;
+  bottom: 18rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+.single-resume-left{
+  padding: 30px;
+  box-shadow: #000000 2px 2px 6px, #4d4d4d -2px -2px 6px;
+  border-radius: 15px;
+  height: 250px;
+  width: 35rem;
+  position: relative;
+  bottom: 17rem;
+  margin-top: 35px;
+  float: left;
+}
+
+.single-resume-right{
+  padding: 30px;
+  box-shadow: #000000 2px 2px 6px, #4d4d4d -2px -2px 6px;
+  border-radius: 15px;
+  height: 250px;
+  width: 35rem;
+  position: relative;
+  bottom: 17rem;
+  margin-top: 35px;
+  float: right;
+}
+
+.single-resume h3{
+  color: #fff;
+  font-weight: 700;
+  font-size: 25px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.single-resume p{
+  color: #bcbcbc;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: 'Roboto', sans-serif;
+  width: 100%;
+}
+
+.expreience-band{
+  margin: 17px 0;
+}
+
+.expreience-band span {
+    color: #fff;
+    margin-left: 15px;
+    position: relative;
+    bottom: 5px;
+}
+
+.Contact h1{
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  color: #ffff;
+  position: relative;
+  bottom: 10rem;
+  font-weight: 600;
+  font-size: 40px;
+  letter-spacing: 2px;
+}
+
+
+
+.Socials ul {
+  position:absolute;
+  left:50%;
+  bottom: 5rem;
+  transform: translate(-50%, -50%);
+  margin:0;
+  padding:0;
+  display:flex;
+}
+
+.Socials ul li {
+  list-style: none;
+}
+
+.Socials li a {
+  position: relative;
+  width:45px;
+  height:45px;
+  display:block;
+  text-align:center;
+  margin:0 10px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  text-decoration:none;
+  box-shadow: 0 10px 15px rgba(0,0,0,0.3);
+  background: linear-gradient(0deg, #ddd, #fff);
+  transition: .5s;
+}
+
+.Socials ul li a:hover {
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  text-decoration:none;
+}
+
+.Socials ul li a .fab {
+  width: 100%;
+  height:100%;
+  display:block;
+  background: linear-gradient(0deg, #fff, #ddd);
+  border-radius: 50%;
+  line-height: calc(60px - 12px);
+  font-size:22px;
+  color: #262626;
+  transition: .5s;
+}
+
+.Socials ul li:nth-child(1) a:hover .fab {
+  color: #3b5998;
+}
+
+.Socials ul li:nth-child(2) a:hover .fab {
+  color: #00aced;
+}
+
+.Socials ul li:nth-child(3) a:hover .fab {
+  color: #dd4b39;
+}
+
+.Socials ul li:nth-child(4) a:hover .fab {
+  color: #007bb6;
+}
+
+.Socials ul li:nth-child(5) a:hover .fab {
+  color: #e4405f;
+}
+
+.Socials{
+  text-align: center;
+}
+
+.Socials p{
+  color: #fff;
+  font-size: 18px;
+  position: relative;
+  left: 11.5rem;
+}
+
+.logoSub{
+  text-align: center;
+}
+
+.logoSub span i{
+  color: #fff;
+  font-size: 25px;
+  border: 4px solid #fff;
+  border-radius: 60px;
+  padding: 20px;
+  position: relative;
+  bottom: 5rem;
+  margin-bottom: 3rem;
+}
+
+.subscriberCont h1{
+  color: #fff;
+  font-weight: 600;
+  position: relative;
+  margin: 50px;
+}
+
+.subscriber-form {
+    position: relative;
+}
+
+.input-form{
+  text-align: center;
+}
+
+.subscriber-form .input-form input {
+    width: 50%;
+    height: 50px;
+    border-radius: 30px;
+    border: none;
+    padding-left: 22px;
+		margin-top: 35px;
+    position: relative;
+    bottom: 13rem;
+}
+
+.input-group-append {
+    position: absolute;
+    top: 3px;
+    right: 3px;
+}
+
+.input-group-append .btn {
+    color: #fff;
+    background: #14161b;
+    border: 1px solid;
+    padding: 12px 32px;
+    font-size: 18px;
+    text-transform: capitalize;
+    font-weight: 700;
+    letter-spacing: 0;
+    border-radius: 30px;
+    position: relative;
+    bottom: 11rem;
+    right:19rem;
+}
+/**/
